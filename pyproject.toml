@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "harponic"
+version = "0.1.0"
+description = ""
+authors = ["Iury F. A. Ferreira <iury.franklinferreira@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "core" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0"
+python-ulid = "^2.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+flake8 = "^7.1.1"
+black = "^24.8.0"
+mypy = "^1.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
